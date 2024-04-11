@@ -521,6 +521,7 @@ Light Components
 
     FastLED Light, components/light/fastled, color_lens.svg
     NeoPixelBus Light, components/light/neopixelbus, color_lens.svg
+    Beken SPI LED Strip, components/light/beken_spi_led_strip, color_lens.svg
     Light Partition, components/light/partition, color_lens.svg
 
     Tuya Dimmer, components/light/tuya, tuya.png
