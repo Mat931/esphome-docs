@@ -208,16 +208,17 @@ To enable signal demodulation, configure the signal carrier frequency and duty c
   Drayton Digistat RF code has been decoded. A variable `x` of type <APIStruct text="remote_base::DraytonData" path="remote_base::DraytonData" />
   is passed to the automation for use in lambdas.
 
-- **on_hob2hood** (*Optional*, [Automation](/automations)): An automation to perform when a
-  Hob2Hood remote code code has been decoded. A variable `x` of type <APIStruct text="remote_base::Hob2HoodData" path="remote_base::Hob2HoodData" />
-  is passed to the automation for use in lambdas.
-
 - **on_dyson** (*Optional*, [Automation](/automations)): An automation to perform when a
   Dyson cool AM07 code has been decoded. A variable `x` of type <APIStruct text="remote_base::DysonData" path="remote_base::DysonData" />
   is passed to the automation for use in lambdas.
 
 - **on_gobox** (*Optional*, [Automation](/automations)): An automation to perform when a
   Go-Box remote code has been decoded. A variable `x` of type <APIStruct text="remote_base::GoboxData" path="remote_base::GoboxData" />
+  is passed to the automation for use in lambdas.
+
+- **on_hob2hood** (*Optional*, [Automation](/automations)): An automation to perform when a
+  Hob2Hood remote code has been decoded. A variable `x` of type
+  <APIStruct text="remote_base::Hob2HoodData" path="remote_base::Hob2HoodData" />
   is passed to the automation for use in lambdas.
 
 - **on_jvc** (*Optional*, [Automation](/automations)): An automation to perform when a
@@ -471,13 +472,13 @@ Remote code selection (exactly one of these has to be included):
 - **hob2hood**: Trigger on a decoded Hob2Hood remote code with the given data.
 
   - **command** (**Required**, enum): The Hob2Hood command to trigger on, see dumper output for more info.
-    - ``light_off``
-    - ``light_on``
-    - ``fan_off``
-    - ``fan_low``
-    - ``fan_medium``
-    - ``fan_high``
-    - ``fan_max``
+    - `light_off`
+    - `light_on`
+    - `fan_off`
+    - `fan_low`
+    - `fan_medium`
+    - `fan_high`
+    - `fan_max`
 
 - **jvc**: Trigger on a decoded JVC remote code with the given data.
 
